@@ -16,16 +16,14 @@ woohooSound = minim.loadSample("homer-woohoo.wav");
   tail.resize(30,77);
 }
 void draw() {
-  if(mouseX>500 && mouseY>100 && mouseX<540 && mouseY<140) {
-    if (playSound) {
+  if(mouseX>500 && mouseY>100 && mouseX<540 && mouseY<140 && mouseClick) {
+    if (playSound == true) {
      woohooSound.trigger();
      playSound = false;
 }
   }
   rect(0,0,600,442);//background
-  rect(500, 100, 40, 40);// tail box 
-  rect(0, 0, 30, 30);// corner box 
-  if(dist(0, 0, mouseX, mouseY) < 30) {
+  if(dist(0, 0, mouseX, mouseY) < 1) {
     background (donkey);
   }
   if(mouseClick) {
