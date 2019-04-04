@@ -16,11 +16,14 @@ public class OwnAdventure {
 				JOptionPane.showMessageDialog(null, "Good, last question.");
 			}
 		} else {
-			JOptionPane.showMessageDialog(null, "You failed! You'll never go to college. You are considered an entity.");
+			JOptionPane.showMessageDialog(null, "You failed! You'll never go to college. The formula for your brain is x = ignorance an y = you. y = x.");
 		}
 		String q2 = JOptionPane.showInputDialog("What is 2+2?");
 		if (q2.equalsIgnoreCase("fish")) {
 			JOptionPane.showMessageDialog(null, "Congragulations! You passed the SAT. You're going to college!");
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "You failed! You'll never go to college. The formula for your brain is x = ignorance an y = you. y = x.");
 		}
 		
 		
